@@ -3,6 +3,7 @@
     package="com.example.fahad.neurobuds">
 
     <uses-feature android:name="android.hardware.usb.host" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
     <application
         android:name=".NeuroBuds"
@@ -14,7 +15,7 @@
         <activity
             android:name=".activities.GraphActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,7 +27,7 @@
         <service android:name=".BudService" />
 
         <activity android:name=".activities.MusicActivity" />
-        <activity android:name=".activities.MeditateActivity" />
+        <activity android:name=".activities.MeditateActivity" android:theme="@style/AppThemeSecondary"/>
         <activity android:name=".activities.BreatheActivity"></activity>
     </application>
 

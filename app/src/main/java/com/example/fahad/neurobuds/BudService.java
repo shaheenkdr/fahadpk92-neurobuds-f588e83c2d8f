@@ -82,7 +82,7 @@ public class BudService extends Service {
     private int mDisplayType        = DISP_CHAR;
     private int mReadLinefeedCode   = LINEFEED_CODE_LF;
     private int mWriteLinefeedCode  = LINEFEED_CODE_LF;
-    private int mBaudrate           = 9600;
+    private int mBaudrate           = 57600;
     private int mDataBits           = UartConfig.DATA_BITS8;
     private int mParity             = UartConfig.PARITY_NONE;
     private int mStopBits           = UartConfig.STOP_BITS1;
