@@ -10,6 +10,7 @@
 
 
     <RelativeLayout
+        android:id="@+id/secondaryRelative"
         android:layout_centerHorizontal="true"
         android:layout_width="350dp"
         android:layout_height="350dp">
@@ -58,6 +59,45 @@
 
 
     </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/concImage"
+        android:layout_below="@+id/secondaryRelative"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/concentration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@+id/secondaryRelative"
+        android:layout_alignBottom="@+id/concImage"
+        android:layout_toEndOf="@+id/concImage"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:text="CONCENTRATION:"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/StressText"
+        android:layout_below="@+id/secondaryRelative"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/stressImage"
+        android:layout_marginEnd="40dp"
+        android:layout_alignParentEnd="true"
+        android:text="STRESS:"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/stressImage"
+        android:layout_below="@+id/secondaryRelative"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/StressText"
+        android:src="@drawable/stress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/musicButton"

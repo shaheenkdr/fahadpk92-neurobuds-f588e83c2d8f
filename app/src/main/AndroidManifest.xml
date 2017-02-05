@@ -27,7 +27,7 @@
         <service android:name=".BudService" />
 
         <activity android:name=".activities.MusicActivity" />
-        <activity android:name=".activities.MeditateActivity" android:theme="@style/AppThemeSecondary"/>
+        <activity android:name=".activities.MeditateActivity" android:theme="@style/AppTheme"/>
         <activity android:name=".activities.BreatheActivity"></activity>
     </application>
 

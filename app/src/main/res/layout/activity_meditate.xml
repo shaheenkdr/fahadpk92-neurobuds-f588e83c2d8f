@@ -2,9 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/test"
+    android:background="#A9A9A9"
     android:layout_height="match_parent">
-    <android.support.v7.widget.Toolbar
+    <!--<android.support.v7.widget.Toolbar
         android:id="@+id/toolbarTrack"
         android:background="@color/colorAccent"
         android:alpha="0.6"
@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content" />
         </RelativeLayout>
 
-    </android.support.v7.widget.Toolbar>
+    </android.support.v7.widget.Toolbar>-->
 
 
     <ImageView

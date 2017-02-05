@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/PhysicaloidLibrary/PhysicaloidLibrary.iml" filepath="$PROJECT_DIR$/PhysicaloidLibrary/PhysicaloidLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/fahadpk92-neurobuds-f588e83c2d8f.iml" filepath="$PROJECT_DIR$/fahadpk92-neurobuds-f588e83c2d8f.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
     </modules>
   </component>
 </project>

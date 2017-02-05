@@ -16,6 +16,9 @@ import com.example.fahad.neurobuds.R;
 
 import java.util.Random;
 
+/**
+ * Activity for Meditation with MediaPlayer and Timer
+ */
 public class MeditateActivity extends AppCompatActivity
 {
 
@@ -28,31 +31,20 @@ public class MeditateActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-
+        getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
+        if(getSupportActionBar()!=null)
+            getSupportActionBar().setTitle("Meditate");
         setContentView(R.layout.activity_meditate);
 
-        ImageButton im1 = (ImageButton)findViewById(R.id.backMeditate);
+       /* ImageButton im1 = (ImageButton)findViewById(R.id.backMeditate);
         im1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
             }
-        });
+        });*/
         isTurnedOn = false;
-        Random ran = new Random();
-        int x = ran.nextInt(3);
-        if(x==0)
-        {
-            mPlayer = MediaPlayer.create(this,R.raw.fst);
-        }
-        else if(x==1)
-        {
-            mPlayer = MediaPlayer.create(this,R.raw.sec);
-        }
-        else if(x==2)
-        {
-            mPlayer = MediaPlayer.create(this,R.raw.thd);
-        }
+        mPlayer = MediaPlayer.create(this,R.raw.medx);
         length = 0;
         try{mPlayer.prepare();}catch (Exception e){}
         playButton = (ImageButton)findViewById(R.id.playButton);

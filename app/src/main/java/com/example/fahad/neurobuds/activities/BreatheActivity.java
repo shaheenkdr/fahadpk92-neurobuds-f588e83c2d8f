@@ -36,7 +36,7 @@ public class BreatheActivity extends AppCompatActivity {
         mButton = (Button)findViewById(R.id.musicPlayButton);
         v = (Vibrator) this.getSystemService(Context.VIBRATOR_SERVICE);
         mButton.setText("Start");
-        mPlayer = MediaPlayer.create(this,R.raw.fst);
+        mPlayer = MediaPlayer.create(this,R.raw.thd);
         try
         {
             mPlayer.prepare();
@@ -73,6 +73,10 @@ public class BreatheActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * inner class that extends default CountrDownTimer
+     * with support for re initiation and onTick customization
+     */
     private class MyCount extends CountDownTimer
     {
         public MyCount(long millisInFuture, long countDownInterval)

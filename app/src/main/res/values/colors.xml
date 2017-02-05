@@ -12,5 +12,7 @@
     <color name="BLUE">#0000ff</color>
     <color name="INDIGO">#4b0082</color>
     <color name="YELLOW">#ffff00</color>
+    <color name="color_red">#F44336</color>
+
 
 </resources>
