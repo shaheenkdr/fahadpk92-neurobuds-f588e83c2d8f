@@ -10,7 +10,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
+
 
 import com.example.fahad.neurobuds.R;
 
@@ -36,13 +38,7 @@ public class MeditateActivity extends AppCompatActivity
             getSupportActionBar().setTitle("Meditate");
         setContentView(R.layout.activity_meditate);
 
-       /* ImageButton im1 = (ImageButton)findViewById(R.id.backMeditate);
-        im1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });*/
+
         isTurnedOn = false;
         mPlayer = MediaPlayer.create(this,R.raw.medx);
         length = 0;
